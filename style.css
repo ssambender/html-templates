@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Top Half */
+#topHalf {
+    background-color: lightblue;
+    position: relative;
+    height: 85%;
+    user-select: none;
+    min-height: 60%;
+}
+
+/* Bottom Half */
+#bottomHalf {
+    background-color: lightcoral;
+    height: 15%;
+    min-height: 10%;
+    user-select: none
+}
+#resizer {
+    width: 100%;
+    height: 6px;
+    opacity: 0;
+    background: darkgray;
+    cursor: row-resize;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
